@@ -2,3 +2,5 @@ version: '3'
 services:
   my-service:
     image: christelle-image
+  ports:
+      - "5000:8080"
