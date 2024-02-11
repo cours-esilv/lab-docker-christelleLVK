@@ -3,6 +3,12 @@ services:
   my-service:
     image: christelle-image
     ports:
-        - "5000:8080"
+      - "5000:8080"
     environment:
     - BACKEND_ENV=production
+  my-frontend:
+    image: my-front-image
+    ports:
+      - "2000:8080"
+    environment:
+      - FRONTEND_ENV=development
